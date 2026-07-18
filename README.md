@@ -1,37 +1,34 @@
-# analisis-repositorio-aron-2026
-ANALISIS
-# Análisis del Comportamiento de los Clientes - Ventas
+# COMPORTAMIENTO-DE-LOS-CLIENTES--VENTAS
 
-## Descripción
+Almacen de los archivos del proyecto de Comportamiento de Cliente
 
-Este proyecto analiza el comportamiento de compra de los clientes utilizando datos transaccionales para identificar patrones de consumo y generar información útil para la toma de decisiones.
+Descripción general del proyecto
+Este proyecto analiza el comportamiento de compra de los clientes utilizando datos transaccionales de 3.900 compras en diversas categorías de productos. El objetivo es obtener información clave sobre patrones de gasto, segmentos de clientes, preferencias de productos y comportamiento de suscripción para orientar decisiones empresariales estratégicas.
 
-## Objetivos
+Resumen del conjunto de datos
 
-- Analizar el comportamiento de compra.
-- Identificar clientes frecuentes.
-- Detectar productos más vendidos.
-- Crear un dashboard interactivo en Power BI.
+• Filas: 3900
+• Columnas: 18
+• Variables clave:
+  - Datos demográficos del cliente (edad, género, ubicación, estado de la suscripción)
+  - Detalles de la compra (artículo adquirido, categoría, importe de la compra, temporada, talla, color)
+  - Comportamiento de compra (descuento aplicado, código promocional utilizado, compras anteriores, frecuencia de compra, valoración de la reseña, tipo de envío)
+• Datos faltantes: 37 valores en la columna de valoración de la reseña
 
-## Tecnologías utilizadas
+Análisis exploratorio de datos con Python
 
-- SQL Server
-- Power BI
-- Python
-- Excel
-- Jupyter Notebook
+Comenzamos con la preparación y limpieza de datos en Python:
 
-## Contenido del repositorio
+a) Carga de datos:
+Se importó el conjunto de datos utilizando pandas.
 
-| Archivo | Descripción |
-|---------|-------------|
-| INFORME_FINAL_PROYECTO_TRANSVERSAL.docx | Informe completo |
-| PROYECTO_TRANSVERSAL.pdf | Versión PDF |
-| SQLQuery.sql | Consultas SQL |
-| Tablero de Control Proyecto.pbix | Dashboard Power BI |
-| proyecto11072026.ipynb | Análisis en Python |
+b) Exploración Inicial:
+Uso de df.info() y revisamos la estructura con .describe() para ver estadísticas generales.
 
-## Autor
+Análisis de datos mediante SQL (transacciones comerciales)
 
-**Aron Atencia**
-Economista en formación - Universidad Nacional del Callao
+Realizamos un análisis estructurado en PostgreSQL para responder a preguntas clave del negocio.
+
+Panel de control en Power BI
+
+Por último, creamos un panel de control interactivo en Power BI para presentar visualmente los hallazgos.
