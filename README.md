@@ -1,6 +1,6 @@
 # analisis-repositorio-aron-2026
 ANALISIS
-# 📊 Análisis del Comportamiento de los Clientes - Ventas
+# Análisis del Comportamiento de los Clientes - Ventas
 
 ## Descripción
 
